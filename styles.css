@@ -2,10 +2,15 @@
 .quadrado {
     width: 100%; /* Largura do quadrado */
     height: 150px; /* Altura do quadrado */
-    background-color: #001969; /* Cor de fundo do quadrado (vermelho) */
+    background-color: #1f2235; /* Cor de fundo do quadrado (vermelho) */
     display: flex; /* Exibindo os círculos em linha */
     justify-content: center; /* Centralizando os círculos horizontalmente */
     align-items: center; /* Centralizando os círculos verticalmente */
+}
+
+body{
+    background-color: #1f2235;
+    color: white;
 }
 
 /* Estilos para o círculo e a imagem */
@@ -16,10 +21,7 @@
     border-radius: 50%; /* Tornando o elemento circular */
     overflow: hidden;
     cursor: pointer;
-}
-
-.whats {
-
+    margin: 10px;
 }
 
 /* Estilizando a imagem do WhatsApp */
@@ -38,3 +40,29 @@
     left: 10%;
 }
 
+/* Estilizando a imagem do Gmail */
+.github img {
+    width: 100%; /* Ajustando o tamanho da imagem */
+    height: 100%;
+    object-fit: contain; /* Centralizando a imagem dentro do círculo */
+    left: 10%;
+}
+
+.container{
+    width: 60%; /* Largura do quadrado */
+    height: 200px; /* Altura do quadrado */
+    border: 1px solid black; /* Borda sólida preta */
+    padding: 10px; /* Espaçamento interno para afastar o texto da borda */
+    border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
+    text-align: left;
+}
+
+.perfil{
+    float: left;
+    margin-right: 10px;
+}
+
+.proj{
+    float: left;
+    margin-right: 10px;
+}

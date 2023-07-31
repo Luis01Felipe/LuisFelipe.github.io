@@ -12,8 +12,17 @@ function copyToClipboard(text) {
 const circles = document.querySelectorAll('.circle');
 circles.forEach(circle => {
     circle.addEventListener('click', () => {
-        const textoParaCopiar = (circle.classList.contains('whats')) ? '+55 11 989583064' : 'luislf.tlhf@gmail.com';
-        copyToClipboard(textoParaCopiar);
-        alert('Texto copiado para a área de transferência: ' + textoParaCopiar);
+        let textoParaCopiar = '';
+        if (circle.classList.contains('github')) {
+            textoParaCopiar = 'https://github.com/Luis01Felipe';
+        } else if (circle.classList.contains('whats')) {
+            textoParaCopiar = '+55 11 989583064';
+        } else if (circle.classList.contains('gmail')) {
+            textoParaCopiar = 'luislf.tlhf@gmail.com';
+        }
+
+        if (textoParaCopiar !== '') {
+            copyToClipboard(textoParaCopiar);
+        }
     });
 });
