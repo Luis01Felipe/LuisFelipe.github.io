@@ -1,0 +1,40 @@
+/* Estilizando o quadrado */
+.quadrado {
+    width: 100%; /* Largura do quadrado */
+    height: 150px; /* Altura do quadrado */
+    background-color: #001969; /* Cor de fundo do quadrado (vermelho) */
+    display: flex; /* Exibindo os círculos em linha */
+    justify-content: center; /* Centralizando os círculos horizontalmente */
+    align-items: center; /* Centralizando os círculos verticalmente */
+}
+
+/* Estilos para o círculo e a imagem */
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Tornando o elemento circular */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.whats {
+
+}
+
+/* Estilizando a imagem do WhatsApp */
+.whats img {
+    width: 100%; /* Ajustando o tamanho da imagem */
+    height: 100%;
+    object-fit: contain; /* Centralizando a imagem dentro do círculo */
+    left: 50%;
+}
+
+/* Estilizando a imagem do Gmail */
+.gmail img {
+    width: 100%; /* Ajustando o tamanho da imagem */
+    height: 100%;
+    object-fit: contain; /* Centralizando a imagem dentro do círculo */
+    left: 10%;
+}
+
