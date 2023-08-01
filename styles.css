@@ -2,7 +2,7 @@
 .quadrado {
     width: 100%; /* Largura do quadrado */
     height: 150px; /* Altura do quadrado */
-    background-color: #1f2235; /* Cor de fundo do quadrado (vermelho) */
+    background-color: #5e5c6a; /* Cor de fundo do quadrado (vermelho) */
     display: flex; /* Exibindo os círculos em linha */
     justify-content: center; /* Centralizando os círculos horizontalmente */
     align-items: center; /* Centralizando os círculos verticalmente */
