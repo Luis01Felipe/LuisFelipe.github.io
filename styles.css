@@ -51,7 +51,7 @@ body{
 .container{
     width: 60%; /* Largura do quadrado */
     height: 200px; /* Altura do quadrado */
-    border: 1px solid black; /* Borda sólida preta */
+    border: 0px solid rgb(214, 36, 214); /* Borda sólida preta */
     padding: 10px; /* Espaçamento interno para afastar o texto da borda */
     border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
     text-align: left;
