@@ -40,7 +40,7 @@ body{
     left: 10%;
 }
 
-/* Estilizando a imagem do Gmail */
+/* Estilizando a imagem do Github */
 .github img {
     width: 100%; /* Ajustando o tamanho da imagem */
     height: 100%;
@@ -65,4 +65,8 @@ body{
 .proj{
     float: left;
     margin-right: 10px;
+}
+
+img{
+    border-radius: 50%;
 }
