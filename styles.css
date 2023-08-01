@@ -57,14 +57,23 @@ body{
     text-align: left;
 }
 
-.perfil{
+.perfil, .proj{
     float: left;
     margin-right: 10px;
+    width: 18%;
+    height: auto;
 }
 
-.proj{
-    float: left;
-    margin-right: 10px;
+@media screen and (max-width: 768px) {
+    .quadrado{
+        height: 100px;
+    }
+    .container{
+        width: 100%;
+    }
+    .container p{
+        text-align: center;
+    }
 }
 
 img{
