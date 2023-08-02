@@ -87,7 +87,7 @@ body {
 }
 
 .container{
-    width: 40%; /* Largura do quadrado */
+    width: 50%; /* Largura do quadrado */
     border: 0px solid rgb(214, 36, 214); /* Borda sólida preta */
     padding: 0px; /* Espaçamento interno para afastar o texto da borda */
     border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
@@ -120,7 +120,7 @@ body {
         height: 100px; /* Reduz a altura do quadrado do cabeçalho para telas menores */
     }
     .navbar ul li {
-        margin-right: 20px; /* Reduz o espaço entre os itens do navbar para telas menores */
+        margin-right: 15px; /* Reduz o espaço entre os itens do navbar para telas menores */
     }
 }
 
@@ -141,8 +141,8 @@ body {
 }
 .circle {
     position: relative;
-    width: 160px; /* Define o tamanho dos círculos */
-    height: 160px;
+    width: 140px; /* Define o tamanho dos círculos */
+    height: 140px;
     border-radius: 50%; /* Tornando o elemento circular */
     overflow: hidden;
     display: flex;
