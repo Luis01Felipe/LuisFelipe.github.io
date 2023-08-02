@@ -3,60 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Online</title>
+    <title>Portfólio Online</title>
     <link rel="stylesheet" href="styles.css"> <!-- Incluindo o arquivo de estilos CSS -->
     <link rel="icon" href="img/background-logo_sphere.png" type="image/x-png">
 </head>
 <body>
-    <header>
-        <div class="quadrado">
-            <!-- Gmail -->
-            <div class="circle gmail">
-                <a href="mailto:luislf.tlhf@gmail.com" target="_blank">
-                    <img src="img/gmail-logo.jpg" alt="Gmail">
-                </a>
-            </div>
-            <!-- Whats -->
-            <div class="circle whats">
-                <a href="https://wa.me/5511989583064?text=Olá,%20gostaria%20de%20falar%20com%20você." target="_blank">
-                    <img src="img/whats-logo.jpg" alt="WhatsApp">
-                </a>
-            </div>
-            <!-- Github -->
-            <div class="circle github">
-                <a href="https://github.com/Luis01Felipe" target="_blank">
-                    <img src="img/github-logo.jpg" alt="Github">
-                </a>
-            </div>
-            
-            <script src="script.js"></script>
+    <header class="quadrado">
+        <div class="perfil-wrapper">
+            <img class="perfil" src="img/foto-perfil.jpg" alt="Foto-de-perfil">
+            <p class="p-nome">LUIS FELIPE</p>
         </div>
-        
-        <!-- Conteúdo do cabeçalho (logotipo, menu, etc.) -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="projetos.html">PROJETOS</a></li>
+                <li><a href="contatos.html">CONTATOS</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main style="display: flex; align-items: center; height: 50vh;">
         <!-- Conteúdo principal do site -->
-        <h1>Sobre Mim</h1>
-        <div class="container">
-            <a href="https://www.linkedin.com/in/luis-felipe-moraes-gomes-couto-b10781201/" target="_blank">
-                <img class="perfil" src="img/foto-perfil.jpg" alt="Foto-de-perfil">
-            </a>
-            <p>Olá, meu nome é Luis Felipe, sou um apaixonado por programação e tenho uma especialização em desenvolvimento de aplicações Java. Atualmente, tenho 22 anos e estou no 4º semestre do curso de Ciência da Computação na Universidade Paulista. <p><b>Clique na imagem ao lado para acessar minha pagina do Linkedin.</b></p></p>    
-        </div>
-        <h1>Projetos</h1>
-        <div class="container">
-            <a href="https://github.com/Luis01Felipe/Maquina-Enygma-Simples-Python-" target="_blank">
-                <img class="proj" src="img/proj-enigma.jpg" alt="Enigma Imagem">
-            </a>
-            <p>O Projeto Maquina-Enygma-Simples-Python- é uma aplicação desenvolvida em Python que emula, de forma simples, o funcionamento da máquina Enigma. A aplicação é capaz de criptografar e descriptografar qualquer tipo de texto, incluindo textos com acentos, letras maiúsculas e até mesmo emojis. <p><b>Clique na imagem ao lado para acessa-lo.</p></p>
-        </div>
-        <br>
-        <div class="container">
-            <a href="https://github.com/Luis01Felipe/Last-Hope" target="_blank">
-                <img class="proj" src="img/proj-lasthope.jpg" alt="Last Hope imagem">
-            </a>
-            <p>Last Hope é um emocionante jogo de nave espacial desenvolvido no MIT App Inventor. O jogador controla uma nave e deve desviar das naves inimigas para sobreviver. Quanto mais tempo o jogador conseguir sobreviver, mais pontos ele ganha, incentivando a busca por recordes e desafios. <p><b>Clique na imagem para acessa-lo.</b> </p></p>
-
+        <div style="text-align: center; width: 100%;">
+            <h1 style="font-size: 40px;">Olá, sou Luis Felipe</h1>
+            <p style="font-size: 28px;">Um desenvolvedor backend especializado em Java e outras linguagens, veja alguns de meus projetos.</p>
+            <a class="botao-projetos" href="projetos.html">Ver Projetos</a>
         </div>
     </main>
 

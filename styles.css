@@ -1,81 +1,154 @@
 /* Estilizando o quadrado */
 .quadrado {
-    width: 100%; /* Largura do quadrado */
-    height: 150px; /* Altura do quadrado */
-    background-color: #5e5c6a; /* Cor de fundo do quadrado (vermelho) */
-    display: flex; /* Exibindo os círculos em linha */
-    justify-content: center; /* Centralizando os círculos horizontalmente */
-    align-items: center; /* Centralizando os círculos verticalmente */
+    width: 100%;
+    height: 150px;
+    background-color: #5e5c6a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: 9999;
+    margin-bottom: 100px; /* Adiciona um espaço entre o navbar e o conteúdo principal */
 }
 
-body{
-    background-color: #1f2235;
+
+.perfil-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.perfil {
+    width: 18%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.p-nome {
+    margin: 0;
+    font-size: 18px;
     color: white;
 }
 
-/* Estilos para o círculo e a imagem */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Ajuste o posicionamento do conteúdo abaixo do cabeçalho */
+main {
+    margin-top: 150px; /* A mesma altura do cabeçalho */
+}
+
+body {
+    background-color: #1f2235;
+    color: white;
+}
+/* Estilos para o botão */
+.botao-projetos {
+    display: inline-block;
+    background-color: #5e5c6a;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 24px; /* Aumenta o tamanho do botão */
+    transition: background-color 0.3s;
+}
+
+
+.botao-projetos:hover {
+    background-color: #4a4855;
+}
+
+/* Estilos para a caixa do botão */
+.caixa-botao {
+    display: inline-block;
+    border: 2px solid #5e5c6a;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.container{
+    width: 40%; /* Largura do quadrado */
+    border: 0px solid rgb(214, 36, 214); /* Borda sólida preta */
+    padding: 0px; /* Espaçamento interno para afastar o texto da borda */
+    border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
+    text-align: left;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza na tela horizontalmente */
+    flex-wrap: wrap;
+}
+.container p{
+    font-size: 20px;
+}
+.proj{
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Reduz a largura do container para telas menores */
+    }
+    .proj {
+        width: 100px; /* Reduz o tamanho das imagens para telas menores */
+    }
+    .quadrado {
+        height: 100px; /* Reduz a altura do quadrado do cabeçalho para telas menores */
+    }
+    .navbar ul li {
+        margin-right: 20px; /* Reduz o espaço entre os itens do navbar para telas menores */
+    }
+}
+
+/* Estilizando a imagem do WhatsApp, Gmail, Github */
+.whats img, .gmail img, .github img, .linkedin img, .discord img {
+    width: 100%; /* Ajustando o tamanho da imagem para preencher o círculo */
+    height: 100%;
+    object-fit: cover; /* Centralizando a imagem e cortando o excesso */
+    border-radius: 50%;
+}
+
+.quad-contatos{
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+
+}
 .circle {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 160px; /* Define o tamanho dos círculos */
+    height: 160px;
     border-radius: 50%; /* Tornando o elemento circular */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     margin: 10px;
 }
 
-/* Estilizando a imagem do WhatsApp */
-.whats img {
-    width: 100%; /* Ajustando o tamanho da imagem */
-    height: 100%;
-    object-fit: contain; /* Centralizando a imagem dentro do círculo */
-    left: 50%;
-}
-
-/* Estilizando a imagem do Gmail */
-.gmail img {
-    width: 100%; /* Ajustando o tamanho da imagem */
-    height: 100%;
-    object-fit: contain; /* Centralizando a imagem dentro do círculo */
-    left: 10%;
-}
-
-/* Estilizando a imagem do Github */
-.github img {
-    width: 100%; /* Ajustando o tamanho da imagem */
-    height: 100%;
-    object-fit: contain; /* Centralizando a imagem dentro do círculo */
-    left: 10%;
-}
-
-.container{
-    width: 60%; /* Largura do quadrado */
-    height: 200px; /* Altura do quadrado */
-    border: 0px solid rgb(214, 36, 214); /* Borda sólida preta */
-    padding: 10px; /* Espaçamento interno para afastar o texto da borda */
-    border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
-    text-align: left;
-}
-
-.perfil, .proj{
-    float: left;
-    margin-right: 10px;
-    width: 18%;
-    height: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .quadrado{
-        height: 100px;
-    }
-    .container{
-        width: 100%;
-    }
-    .container p{
-        text-align: center;
-    }
-}
-
-img{
-    border-radius: 50%;
-}
