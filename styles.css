@@ -62,7 +62,7 @@ body {
     color: white;
 }
 /* Estilos para o botão */
-.botao-projetos, .botao-contatos {
+.botao-projetos, .botao-contatos, .botao-inicio {
     display: inline-block;
     background-color: #5e5c6a;
     color: white;
@@ -74,7 +74,7 @@ body {
 }
 
 
-.botao-projetos:hover {
+.botao-projetos:hover, .botao-contatos:hover, .botao-inicio:hover {
     background-color: #4a4855;
 }
 
