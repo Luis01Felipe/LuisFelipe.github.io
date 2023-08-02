@@ -121,6 +121,7 @@ body {
     }
     .navbar ul li {
         margin-right: 15px; /* Reduz o espaço entre os itens do navbar para telas menores */
+        font-size: 12px;
     }
 }
 
