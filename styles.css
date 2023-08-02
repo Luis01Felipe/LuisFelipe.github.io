@@ -88,15 +88,15 @@ body {
 
 .container{
     width: 40%; /* Largura do quadrado */
-    height: 200px; /* Altura do quadrado */
     border: 0px solid rgb(214, 36, 214); /* Borda sólida preta */
-    padding: 10px; /* Espaçamento interno para afastar o texto da borda */
+    padding: 0px; /* Espaçamento interno para afastar o texto da borda */
     border-radius: 10px; /* Cantos arredondados com raio de 10 pixels */
     text-align: left;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     margin: 0 auto; /* Centraliza na tela horizontalmente */
+    flex-wrap: wrap;
 }
 .container p{
     font-size: 20px;
@@ -109,11 +109,46 @@ body {
     border-radius: 50%;
 }
 
-/* Media query para telas menores (exemplo: dispositivos móveis) */
 @media screen and (max-width: 768px) {
-    .container p {
-        font-size: 14px; /* Tamanho de fonte para telas menores */
+    .container {
+        width: 90%; /* Reduz a largura do container para telas menores */
+    }
+    .proj {
+        width: 100px; /* Reduz o tamanho das imagens para telas menores */
+    }
+    .quadrado {
+        height: 100px; /* Reduz a altura do quadrado do cabeçalho para telas menores */
+    }
+    .navbar ul li {
+        margin-right: 20px; /* Reduz o espaço entre os itens do navbar para telas menores */
     }
 }
 
+/* Estilizando a imagem do WhatsApp, Gmail, Github */
+.whats img, .gmail img, .github img, .linkedin img, .discord img {
+    width: 100%; /* Ajustando o tamanho da imagem para preencher o círculo */
+    height: 100%;
+    object-fit: cover; /* Centralizando a imagem e cortando o excesso */
+    border-radius: 50%;
+}
+
+.quad-contatos{
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+
+}
+.circle {
+    position: relative;
+    width: 160px; /* Define o tamanho dos círculos */
+    height: 160px;
+    border-radius: 50%; /* Tornando o elemento circular */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
 
