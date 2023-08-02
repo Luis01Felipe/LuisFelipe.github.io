@@ -118,10 +118,20 @@ body {
     }
     .quadrado {
         height: 100px; /* Reduz a altura do quadrado do cabeçalho para telas menores */
+        padding: 8px;
     }
     .navbar ul li {
-        margin-right: 15px; /* Reduz o espaço entre os itens do navbar para telas menores */
+        margin-right: 8px; /* Reduz o espaço entre os itens do navbar para telas menores */
+        margin-right: 12px;
         font-size: 12px;
+
+    }
+    .p-nome{
+        display: none;
+    }
+    .perfil{
+        width: 80px;
+        height: 80px;
     }
 }
 
