@@ -12,6 +12,7 @@
     padding: 0 20px;
     z-index: 9999;
     margin-bottom: 100px; /* Adiciona um espaço entre o navbar e o conteúdo principal */
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -33,6 +34,7 @@
     margin: 0;
     font-size: 18px;
     color: white;
+    font-family: 'Open Sans', sans-serif;	
 }
 
 nav ul {
@@ -50,6 +52,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Ajuste o posicionamento do conteúdo abaixo do cabeçalho */
@@ -57,9 +60,11 @@ main {
     margin-top: 150px; /* A mesma altura do cabeçalho */
 }
 
+
 body {
     background-color: #1f2235;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 /* Estilos para o botão */
 .botao-projetos, .botao-contatos, .botao-inicio {
